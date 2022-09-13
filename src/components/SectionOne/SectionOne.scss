@@ -1,0 +1,42 @@
+@import "../../styles/utils/breakpoints";
+@import "../../styles/utils/variables";
+
+.section-one {
+  padding-top: 30px;
+  padding-bottom: 70px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  h1 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    color: $col-grey;
+    margin-bottom: 66px;
+  }
+
+  .firstpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 46px;
+
+    img {
+      width: 25px;
+      object-fit: contain;
+      overflow: hidden;
+    }
+  }
+
+  .secondpart {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    img {
+      width: 40px;
+      object-fit: contain;
+      overflow: hidden;
+    }
+  }
+}

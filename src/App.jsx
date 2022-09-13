@@ -1,11 +1,13 @@
-import "../src/styles/App.scss";
+import Hero from "./components/Hero/Hero";
+import SectionOne from "./components/SectionOne/SectionOne";
 
-function App() {
+const App = () => {
   return (
-    <div>
-      <h1>Hello</h1>
-    </div>
+    <main>
+      <Hero />
+      <SectionOne />
+    </main>
   );
-}
+};
 
 export default App;

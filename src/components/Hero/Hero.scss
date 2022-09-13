@@ -1,0 +1,83 @@
+@import "../../styles/utils/breakpoints";
+@import "../../styles/utils/variables";
+@import "../../styles/utils/reset";
+
+.container {
+  background-color: $col-purple;
+  padding-top: 75px;
+  height: auto;
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .imgCont {
+      padding-bottom: 80px;
+      width: 120px;
+      overflow: hidden;
+    }
+
+    img {
+      max-width: 100%;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    h1 {
+      font-size: 3.25rem;
+      padding-bottom: 20px;
+    }
+
+    p {
+      font-size: 1.1875rem;
+      padding-bottom: 40px;
+    }
+
+    h1,
+    p {
+      color: $col-white;
+      text-align: center;
+    }
+
+    .buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      button {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 7px;
+        padding: 12px 22px;
+        color: $btn-col;
+        font-size: 1.2rem;
+        font-weight: 550;
+        border-radius: 20px;
+        border: none;
+      }
+    }
+
+    .vector {
+      display: inline-flex;
+      position: absolute;
+      max-width: 100%;
+      overflow: hidden;
+
+      img {
+        width: 200px;
+      }
+    }
+
+    .phone {
+      padding-top: 120px;
+      height: 420px;
+      overflow: hidden;
+
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
