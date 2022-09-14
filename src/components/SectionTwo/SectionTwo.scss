@@ -1,0 +1,12 @@
+@import "../../styles/utils/breakpoints";
+@import "../../styles/utils/variables";
+
+.iframeCont {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 38px;
+
+  iframe {
+    border-radius: 25px;
+  }
+}

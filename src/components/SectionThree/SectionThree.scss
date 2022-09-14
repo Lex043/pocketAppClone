@@ -1,0 +1,58 @@
+@import "../../styles/utils/breakpoints";
+@import "../../styles/utils/variables";
+
+.section-three {
+  padding-left: 16px;
+  padding-right: 16px;
+  padding-top: 38px;
+
+  .features {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    justify-content: space-between;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 2px;
+    padding-right: 10px;
+    background-color: #e5e5e5;
+
+    .payments {
+      background-color: $col-purple;
+      border-radius: 12px;
+      padding-top: 6px;
+      padding-bottom: 6px;
+
+      p {
+        color: $col-white;
+        font-weight: bold;
+      }
+    }
+
+    .shops {
+      p {
+        font-weight: bold;
+      }
+    }
+
+    .groups {
+      p {
+        font-weight: bold;
+      }
+    }
+
+    .cards {
+      p {
+        font-weight: bold;
+      }
+    }
+  }
+
+  .section-three-text {
+    color: $col-grey;
+    text-align: center;
+    padding-top: 4px;
+    margin-bottom: 83px;
+    font-size: 1.2rem;
+  }
+}
