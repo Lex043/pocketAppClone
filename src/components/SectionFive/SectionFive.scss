@@ -1,0 +1,60 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/breakpoints";
+
+.section-five-cont {
+  padding: 0 16px;
+  margin-bottom: 50px;
+  .section-five {
+    text-align: center;
+    background: #21232b url(../../assets/wavy-bg-black.72ada49b.png) 50%
+      no-repeat;
+    color: $col-white;
+    background-size: cover;
+    border-radius: 2.4rem;
+    padding: 6rem 1.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  p {
+    color: $col-grey;
+    font-weight: bold;
+    margin-bottom: 2rem;
+  }
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+    padding-left: 12px;
+    padding-right: 12px;
+
+    .apple,
+    .google {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 7px;
+      padding-top: 12px;
+      padding-bottom: 12px;
+      color: $btn-col;
+      font-size: 1.2rem;
+      font-weight: 550;
+      border-radius: 20px;
+      border: none;
+    }
+
+    .apple {
+      padding-left: 18px;
+      padding-right: 18px;
+    }
+
+    .google {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+}

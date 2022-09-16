@@ -1,2 +1,36 @@
-@import "../../styles/utils/breakpoints";
 @import "../../styles/utils/variables";
+@import "../../styles/utils/breakpoints";
+
+.section-four {
+  padding: 0 16px;
+
+  .pocket-to-pocket,
+  .free-bank-transfer,
+  .badges,
+  .pay-bills,
+  .pay-on-the-go,
+  .pay-securely,
+  .giveaways {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 78px;
+  }
+
+  h1 {
+    font-size: 2rem;
+    text-align: center;
+    color: $btn-col;
+    margin-bottom: 14px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 1.1rem;
+    color: $btn-col;
+    margin-bottom: 20px;
+  }
+
+  img {
+    max-width: 100%;
+  }
+}

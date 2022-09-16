@@ -1,0 +1,49 @@
+@import "../../styles/utils/variables";
+@import "../../styles/utils/breakpoints";
+
+.footer {
+  padding: 52px 16px 82px;
+
+  header {
+    text-align: center;
+    h1 {
+      color: $col-grey;
+      padding-bottom: 14px;
+      font-size: 1.3rem;
+    }
+
+    p {
+      color: $col-grey;
+      font-size: 1.2rem;
+
+      .piggyvest,
+      .vfd {
+        color: $btn-col;
+      }
+    }
+  }
+
+  .fot-logo {
+    margin-bottom: 52px;
+    margin-top: 52px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    width: 50px;
+    color: $col-grey;
+  }
+
+  .social-media {
+    display: flex;
+    justify-content: space-evenly;
+
+    .instagram,
+    .twitter,
+    .tiktok,
+    .facebook {
+      width: 30px;
+      height: 30px;
+    }
+  }
+}
