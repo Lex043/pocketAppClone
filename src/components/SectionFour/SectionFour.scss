@@ -13,7 +13,27 @@
   .giveaways {
     display: flex;
     flex-direction: column;
+
+    @include media(">=tablet") {
+      flex-direction: row;
+      justify-content: center;
+      gap: 2rem;
+      align-items: center;
+      width: 100%;
+      padding: 0 43px;
+    }
     margin-bottom: 78px;
+  }
+
+  .giveaways,
+  .pay-on-the-go,
+  .badges,
+  .pocket-to-pocket {
+    img {
+      @include media(">=tablet") {
+        order: -1;
+      }
+    }
   }
 
   h1 {
@@ -21,16 +41,29 @@
     text-align: center;
     color: $btn-col;
     margin-bottom: 14px;
+
+    @include media(">=tablet") {
+      text-align: left;
+      font-size: 3rem;
+    }
   }
 
   p {
     text-align: center;
-    font-size: 1.1rem;
+    font-size: 1;
     color: $btn-col;
     margin-bottom: 20px;
+
+    @include media(">=tablet") {
+      text-align: left;
+    }
   }
 
   img {
     max-width: 100%;
+
+    @include media(">=tablet") {
+      width: 50%;
+    }
   }
 }

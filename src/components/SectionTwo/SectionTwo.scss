@@ -2,11 +2,22 @@
 @import "../../styles/utils/breakpoints";
 
 .iframeCont {
-  display: flex;
-  justify-content: center;
+  // display: flex;
+  // justify-content: center;
+  padding: 0 16px;
   margin-bottom: 38px;
+
+  @include media(">=tablet") {
+    padding: 0 43px;
+    margin-bottom: 80px;
+  }
 
   iframe {
     border-radius: 25px;
+    width: 100%;
+
+    @include media(">=tablet") {
+      height: 300px;
+    }
   }
 }

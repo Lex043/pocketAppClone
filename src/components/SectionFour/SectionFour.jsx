@@ -24,7 +24,7 @@ const SectionFour = () => {
 
       <div className="free-bank-transfer">
         <header>
-          <h1>Free Bank Transfer</h1>
+          <h1>Fast Bank Transfer</h1>
           <p>Send money to any bank in Nigeria quickly</p>
         </header>
         <img src={banktransfer} alt="" />

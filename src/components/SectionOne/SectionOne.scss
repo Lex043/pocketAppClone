@@ -4,8 +4,13 @@
 .section-one {
   padding-top: 30px;
   padding-bottom: 70px;
-  padding-left: 10px;
-  padding-right: 10px;
+  padding-left: 12px;
+  padding-right: 12px;
+
+  @include media(">=tablet") {
+    padding: 40px 43px;
+    margin-bottom: 80px;
+  }
 
   h1 {
     font-size: 1.1rem;
@@ -25,6 +30,10 @@
       width: 35px;
       object-fit: contain;
       overflow: hidden;
+
+      @include media(">=tablet") {
+        width: 70px;
+      }
     }
   }
 
@@ -37,6 +46,10 @@
       width: 50px;
       object-fit: contain;
       overflow: hidden;
+
+      @include media(">=tablet") {
+        width: 100px;
+      }
     }
   }
 }

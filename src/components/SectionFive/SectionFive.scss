@@ -4,33 +4,58 @@
 .section-five-cont {
   padding: 0 16px;
   margin-bottom: 50px;
+
+  @include media(">=tablet") {
+    padding: 0 43px;
+  }
   .section-five {
     text-align: center;
-    background: #21232b url(../../assets/wavy-bg-black.72ada49b.png) 50%
+    background: #212337 url(../../assets/wavy-bg-black.72ada49b.png) 50%
       no-repeat;
     color: $col-white;
     background-size: cover;
-    border-radius: 2.4rem;
-    padding: 6rem 1.5rem;
+    border-radius: 2.6rem;
+    padding: 5.2rem 2rem;
+
+    @include media(">=desktop") {
+      padding: 10rem 19rem;
+    }
   }
 
   h1 {
     font-size: 2rem;
     margin-bottom: 1rem;
+
+    @include media(">=desktop") {
+      font-size: 4rem;
+    }
   }
 
   p {
     color: $col-grey;
     font-weight: bold;
     margin-bottom: 2rem;
+
+    @include media(">=tablet") {
+      font-size: 1.2rem;
+    }
+
+    @include media(">=desktop") {
+      font-size: 2rem;
+    }
   }
   .buttons {
     display: flex;
-    flex-direction: column;
+    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     padding-left: 12px;
     padding-right: 12px;
+
+    @include media(">=desktop") {
+      gap: 4rem;
+    }
 
     .apple,
     .google {
@@ -38,23 +63,35 @@
       align-items: center;
       justify-content: center;
       gap: 7px;
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding: 12px 0;
       color: $btn-col;
       font-size: 1.2rem;
       font-weight: 550;
       border-radius: 20px;
       border: none;
+
+      @include media(">=desktop") {
+        font-size: 2rem;
+        border-radius: 42px;
+      }
     }
 
     .apple {
       padding-left: 18px;
       padding-right: 18px;
+
+      @include media(">=desktop") {
+        padding: 1.4rem 2rem;
+      }
     }
 
     .google {
       padding-left: 20px;
       padding-right: 20px;
+
+      @include media(">=desktop") {
+        padding: 1.4rem 2.1rem;
+      }
     }
   }
 }

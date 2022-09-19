@@ -10,11 +10,19 @@
       color: $col-grey;
       padding-bottom: 14px;
       font-size: 1.3rem;
+
+      @include media(">=desktop") {
+        font-size: 2rem;
+      }
     }
 
     p {
       color: $col-grey;
       font-size: 1.2rem;
+
+      @include media(">=desktop") {
+        font-size: 2rem;
+      }
 
       .piggyvest,
       .vfd {
@@ -31,19 +39,27 @@
 
   .footer-logo {
     width: 50px;
-    color: $col-grey;
+    @include media(">=desktop") {
+      width: 100px;
+    }
   }
 
   .social-media {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 2.5rem;
 
     .instagram,
     .twitter,
     .tiktok,
     .facebook {
-      width: 30px;
-      height: 30px;
+      width: 26px;
+      height: 26px;
+
+      @include media(">=desktop") {
+        width: 46px;
+        height: 46px;
+      }
     }
   }
 }

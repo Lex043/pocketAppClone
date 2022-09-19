@@ -11,6 +11,10 @@
   padding-bottom: 52px;
   margin-bottom: 20px;
 
+  @include media(">=desktop") {
+    gap: 38px;
+  }
+
   .faqs,
   .privacy,
   .terms,
@@ -20,7 +24,13 @@
     font-weight: bold;
     color: black;
     background-color: rgba(33, 35, 55, 0.1);
-    padding: 15px 22px 15px 22px;
+    padding: 15px 22px;
     border-radius: 22px;
+
+    @include media(">=desktop") {
+      font-size: 2rem;
+      border-radius: 38px;
+      padding: 20px 28px;
+    }
   }
 }
