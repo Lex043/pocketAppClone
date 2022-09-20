@@ -4,6 +4,24 @@
 .section-four {
   padding: 0 16px;
 
+  @include media(">=desktop") {
+    padding: 0 9rem;
+  }
+
+  .section-four-text {
+    color: $col-grey;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 83px;
+    font-size: 1.2rem;
+
+    @include media(">=desktop") {
+      font-size: 2rem;
+      max-width: 700px;
+      margin: 2rem auto 4rem auto;
+    }
+  }
+
   .pocket-to-pocket,
   .free-bank-transfer,
   .badges,
@@ -13,6 +31,7 @@
   .giveaways {
     display: flex;
     flex-direction: column;
+    margin-bottom: 78px;
 
     @include media(">=tablet") {
       flex-direction: row;
@@ -22,7 +41,10 @@
       width: 100%;
       padding: 0 43px;
     }
-    margin-bottom: 78px;
+
+    @include media(">=desktop") {
+      gap: 6rem;
+    }
   }
 
   .giveaways,
@@ -41,21 +63,29 @@
     text-align: center;
     color: $btn-col;
     margin-bottom: 14px;
+    font-weight: 600;
 
     @include media(">=tablet") {
       text-align: left;
       font-size: 3rem;
     }
+
+    @include media(">=desktop") {
+      font-size: 4.5rem;
+    }
   }
 
   p {
     text-align: center;
-    font-size: 1;
     color: $btn-col;
     margin-bottom: 20px;
 
     @include media(">=tablet") {
       text-align: left;
+    }
+
+    @include media(">=desktop") {
+      font-size: 1.6rem;
     }
   }
 

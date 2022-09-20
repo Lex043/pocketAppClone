@@ -1,26 +1,32 @@
 import "./SectionThree.scss";
+import { Link } from "react-router-dom";
 
 const SectionThree = () => {
   return (
     <section className="section-three">
       <div className="features">
         <div className="payments">
-          <p>Payments</p>
+          <Link to="/">
+            <p>Payments</p>
+          </Link>
         </div>
         <div className="shops">
-          <p>Shops</p>
+          <Link to="shops">
+            <p>Shops</p>
+          </Link>
         </div>
         <div className="groups">
-          <p>Groups</p>
+          <Link to="/groups">
+            <p>Groups</p>
+          </Link>
         </div>
+
         <div className="cards">
-          <p>Cards</p>
+          <Link to="/cards">
+            <p>Cards</p>
+          </Link>
         </div>
       </div>
-      <p className="section-three-text">
-        Send Cash to people and businesses in the quickest and most convenient
-        way.
-      </p>
     </section>
   );
 };

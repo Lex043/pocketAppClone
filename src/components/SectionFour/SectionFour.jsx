@@ -1,5 +1,4 @@
 import "./SectionFour.scss";
-
 import p2p from "../../assets/_images_peer-to-peer.png";
 import banktransfer from "../../assets/_images_bank-transfer.png";
 import badges from "../../assets/_images_badges.png";
@@ -11,6 +10,10 @@ import giveaways from "../../assets/_images_giveaways.png";
 const SectionFour = () => {
   return (
     <section className="section-four">
+      <p className="section-four-text">
+        Send Cash to people and businesses in the quickest and most convenient
+        way.
+      </p>
       <div className="pocket-to-pocket">
         <header>
           <h1>Pocket to Pocket (P2P)</h1>
