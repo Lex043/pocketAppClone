@@ -12,16 +12,11 @@
     height: 61.5rem;
   }
 
-  @include media(">=sm-desktop") {
+  @include media(">=desktop") {
     display: flex;
     justify-content: space-between;
     padding-left: 2.5rem;
-    height: 48rem;
-  }
-
-  @include media(">=desktop") {
     height: auto;
-    padding-left: 4rem;
   }
 
   .header {
@@ -29,11 +24,8 @@
     flex-direction: column;
     align-items: center;
 
-    @include media(">=sm-desktop") {
-      align-items: flex-start;
-    }
-
     @include media(">=desktop") {
+      align-items: flex-start;
       padding-top: 5rem;
     }
 
@@ -75,7 +67,7 @@
         max-width: 420px;
       }
 
-      @include media(">=sm-desktop") {
+      @include media(">=desktop") {
         font-size: 2rem;
         max-width: 600px;
       }
@@ -86,7 +78,7 @@
       color: $col-white;
       text-align: center;
 
-      @include media(">=sm-desktop") {
+      @include media(">=desktop") {
         text-align: left;
       }
     }
@@ -96,7 +88,7 @@
       flex-direction: column;
       gap: 10px;
 
-      @include media(">=sm-desktop") {
+      @include media(">=desktop") {
         display: none;
       }
 
@@ -117,15 +109,11 @@
     .scan {
       display: none;
 
-      @include media(">=sm-desktop") {
-        display: flex;
-        gap: 2rem;
-        color: white;
-      }
-
       @include media(">=desktop") {
+        display: flex;
         font-size: 21px;
         gap: 3rem;
+        color: white;
         margin-top: 3rem;
       }
 
@@ -148,19 +136,13 @@
       margin-top: 2rem;
     }
 
-    @include media(">=sm-desktop") {
+    @include media(">=desktop") {
       width: 100%;
       position: relative;
-      max-width: 30rem;
-      transform: rotate(0);
-      right: -8rem;
-      transform: scale(1.5);
-    }
-
-    @include media(">=desktop") {
       max-width: 40%;
+      transform: rotate(0);
       right: 2rem;
-      margin-top: -5rem;
+      transform: scale(1.5);
     }
   }
 
@@ -176,14 +158,10 @@
       height: 392px;
     }
 
-    @include media(">=sm-desktop") {
-      top: 9rem;
-      right: -5rem;
-      height: auto;
-    }
-
     @include media(">=desktop") {
+      top: 9rem;
       right: 6rem;
+      height: auto;
     }
 
     img {
