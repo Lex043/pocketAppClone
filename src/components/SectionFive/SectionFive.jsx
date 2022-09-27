@@ -1,5 +1,5 @@
 import { FaApple } from "react-icons/fa";
-import { RiGooglePlayFill } from "react-icons/Ri";
+import { RiGooglePlayFill } from "react-icons/ri";
 import "./SectionFive.scss";
 
 const SectionFive = () => {
