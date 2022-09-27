@@ -1,2 +1,245 @@
 @import "../../styles/utils/variables";
 @import "../../styles/utils/breakpoints";
+
+.shop__sticky {
+  padding: 38px 16px;
+
+  @include media(">=tablet") {
+    padding: 0 43px;
+  }
+
+  .features {
+    display: flex;
+    align-items: center;
+    border-radius: 32px;
+    justify-content: center;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 3px;
+    cursor: pointer;
+    background-color: #e5e5e5;
+    position: sticky;
+    top: 2rem;
+
+    @include media(">=tablet") {
+      top: 3rem;
+    }
+
+    @include media(">=desktop") {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      border-radius: 50px;
+      padding-left: 8px;
+    }
+
+    .payments {
+      border-radius: 32px;
+      padding: 9px 0;
+      width: 25%;
+      text-align: center;
+
+      @include media(">=desktop") {
+        border-radius: 60px;
+      }
+
+      a {
+        text-decoration: none;
+
+        p {
+          color: black;
+          font-weight: bold;
+
+          @include media(">=tablet") {
+            font-size: 1.6rem;
+            padding: 0 2.6rem;
+          }
+
+          @include media(">=desktop") {
+            font-size: 2rem;
+            padding: 12px 0;
+            border-radius: 60px;
+          }
+        }
+      }
+    }
+
+    .shops {
+      border-radius: 32px;
+      background-color: #ffad0d;
+      padding: 9px 0;
+      width: 25%;
+      text-align: center;
+
+      @include media(">=desktop") {
+        border-radius: 60px;
+      }
+
+      a {
+        text-decoration: none;
+
+        p {
+          color: white;
+          font-weight: bold;
+
+          @include media(">=tablet") {
+            font-size: 1.6rem;
+            padding: 0 2.6rem;
+          }
+
+          @include media(">=desktop") {
+            font-size: 2rem;
+            padding: 12px 0;
+            border-radius: 60px;
+          }
+        }
+      }
+    }
+
+    .groups {
+      width: 25%;
+      border-radius: 32px;
+
+      padding: 9px 0;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: black;
+
+        p {
+          font-weight: bold;
+
+          @include media(">=tablet") {
+            font-size: 1.6rem;
+            padding: 0 2.6rem;
+          }
+
+          @include media(">=desktop") {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+
+    .cards {
+      width: 25%;
+      border-radius: 32px;
+      padding-top: 9px;
+      padding-bottom: 9px;
+      text-align: center;
+
+      a {
+        text-decoration: none;
+        color: black;
+        p {
+          font-weight: bold;
+          @include media(">=tablet") {
+            font-size: 1.6rem;
+            padding: 0 2.6rem;
+          }
+
+          @include media(">=desktop") {
+            font-size: 2rem;
+          }
+        }
+      }
+    }
+  }
+
+  // main section
+  .shops {
+    padding: 0 16px;
+
+    @include media(">=desktop") {
+      padding: 0 6rem;
+    }
+
+    .shops__header {
+      color: $col-grey;
+      text-align: center;
+      margin-top: 35px;
+      margin-bottom: 83px;
+      font-size: 1.2rem;
+
+      @include media(">=desktop") {
+        font-size: 2rem;
+        max-width: 700px;
+        margin: 2rem auto 4rem auto;
+      }
+    }
+
+    .get__paid,
+    .fashion__businesses,
+    .pocket__for__thrifts,
+    .food__businesses,
+    .any__businesses,
+    .pocket__for__creators {
+      display: flex;
+      flex-direction: column;
+      margin-bottom: 78px;
+
+      @include media(">=tablet") {
+        flex-direction: row;
+        justify-content: center;
+        gap: 2rem;
+        align-items: center;
+        width: 100%;
+        padding: 0 43px;
+      }
+
+      @include media(">=desktop") {
+        gap: 6rem;
+        margin-bottom: 10rem;
+      }
+
+      h1 {
+        font-size: 2rem;
+        text-align: center;
+        color: $btn-col;
+        margin-bottom: 14px;
+        font-weight: 600;
+
+        @include media(">=tablet") {
+          text-align: left;
+          font-size: 2.6rem;
+        }
+
+        @include media(">=desktop") {
+          font-size: 4.5rem;
+        }
+      }
+
+      p {
+        text-align: center;
+        color: $btn-col;
+        margin-bottom: 20px;
+
+        @include media(">=tablet") {
+          text-align: left;
+        }
+
+        @include media(">=desktop") {
+          font-size: 1.6rem;
+        }
+      }
+
+      img {
+        max-width: 100%;
+
+        @include media(">=tablet") {
+          width: 50%;
+        }
+      }
+    }
+
+    .get__paid,
+    .pocket__for__thrifts,
+    .any__businesses {
+      img {
+        @include media(">=tablet") {
+          order: -1;
+        }
+      }
+    }
+  }
+}

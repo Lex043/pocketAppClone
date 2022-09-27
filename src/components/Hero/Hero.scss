@@ -5,17 +5,47 @@
 .container {
   background-color: $col-purple;
   padding-top: 75px;
-  height: auto;
+  height: 59rem;
+  overflow: hidden;
+
+  @include media(">=tablet") {
+    height: 61.5rem;
+  }
+
+  @include media(">=sm-desktop") {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 2.5rem;
+    height: 48rem;
+  }
+
+  @include media(">=desktop") {
+    height: auto;
+    padding-left: 4rem;
+  }
 
   .header {
     display: flex;
     flex-direction: column;
     align-items: center;
 
+    @include media(">=sm-desktop") {
+      align-items: flex-start;
+    }
+
+    @include media(">=desktop") {
+      padding-top: 5rem;
+    }
+
     .imgCont {
       padding-bottom: 80px;
       width: 120px;
       overflow: hidden;
+
+      @include media(">=desktop") {
+        width: 200px;
+        padding-bottom: 120px;
+      }
     }
 
     img {
@@ -27,23 +57,48 @@
     h1 {
       font-size: 3.25rem;
       padding-bottom: 20px;
+
+      @include media(">=tablet") {
+        font-size: 2.6rem;
+      }
+
+      @include media(">=desktop") {
+        font-size: 5.3rem;
+      }
     }
 
     p {
-      font-size: 1.1875rem;
+      font-size: 1.1rem;
       padding-bottom: 40px;
+
+      @include media(">=tablet") {
+        max-width: 420px;
+      }
+
+      @include media(">=sm-desktop") {
+        font-size: 2rem;
+        max-width: 600px;
+      }
     }
 
     h1,
     p {
       color: $col-white;
       text-align: center;
+
+      @include media(">=sm-desktop") {
+        text-align: left;
+      }
     }
 
     .buttons {
       display: flex;
       flex-direction: column;
       gap: 10px;
+
+      @include media(">=sm-desktop") {
+        display: none;
+      }
 
       button {
         display: flex;
@@ -58,24 +113,88 @@
         border: none;
       }
     }
+
+    .scan {
+      display: none;
+
+      @include media(">=sm-desktop") {
+        display: flex;
+        gap: 2rem;
+        color: white;
+      }
+
+      @include media(">=desktop") {
+        font-size: 21px;
+        gap: 3rem;
+        margin-top: 3rem;
+      }
+
+      .scan__text {
+        max-width: 5rem;
+        transform: rotate(-2deg);
+      }
+
+      .scan__to__download {
+        transform: rotate(2deg);
+      }
+    }
   }
 
   .lightening__bolts__cont {
-    position: absolute;
-    margin-top: 16.2rem;
-    width: 100%;
-    height: 130px;
-    // z-index: 30;
-    overflow: hidden;
+    margin-top: 16rem;
+
+    @include media(">=tablet") {
+      transform: rotate(90deg);
+      margin-top: 2rem;
+    }
+
+    @include media(">=sm-desktop") {
+      width: 100%;
+      position: relative;
+      max-width: 30rem;
+      transform: rotate(0);
+      right: -8rem;
+      transform: scale(1.5);
+    }
+
+    @include media(">=desktop") {
+      max-width: 40%;
+      right: 2rem;
+      margin-top: -5rem;
+    }
   }
 
   .phone {
-    height: 320px;
+    position: absolute;
+    top: 43.4rem;
     overflow: hidden;
-    bottom: -1rem;
-    // width: 15rem;
+    height: 250px;
+    text-align: center;
+
+    @include media(">=tablet") {
+      top: 37rem;
+      height: 392px;
+    }
+
+    @include media(">=sm-desktop") {
+      top: 9rem;
+      right: -5rem;
+      height: auto;
+    }
+
+    @include media(">=sm-desktop") {
+      right: 6rem;
+    }
+
     img {
-      max-width: 100%;
+      width: 80%;
+      @include media(">=tablet") {
+        width: 50%;
+      }
+
+      @include media(">=desktop") {
+        width: 100%;
+      }
     }
   }
 }

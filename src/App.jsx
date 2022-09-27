@@ -3,7 +3,6 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Hero from "./components/Hero/Hero";
 import SectionOne from "./components/SectionOne/SectionOne";
 import SectionTwo from "./components/SectionTwo/SectionTwo";
-import SectionThree from "./components/SectionThree/SectionThree";
 import SectionFour from "./components/SectionFour/SectionFour";
 import Shops from "./Pages/Shops/Shops";
 import Groups from "./Pages/Groups/Groups";
@@ -18,7 +17,6 @@ const App = () => {
       <Hero />
       <SectionOne />
       <SectionTwo />
-      <SectionThree />
       <Routes>
         <Route path="/" element={<SectionFour />}></Route>
         <Route path="/shops" element={<Shops />}></Route>

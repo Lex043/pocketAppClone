@@ -2,12 +2,13 @@
 @import "../../styles/utils/breakpoints";
 
 .section-three {
-  padding-left: 16px;
-  padding-right: 16px;
-  padding-top: 38px;
+  padding: 38px 16px;
+  position: sticky;
+  top: 4px;
 
   @include media(">=tablet") {
     padding: 0 43px;
+    top: 3rem;
   }
 
   .features {
@@ -31,8 +32,7 @@
     .payments {
       background-color: $col-purple;
       border-radius: 32px;
-      padding-top: 9px;
-      padding-bottom: 9px;
+      padding: 9px 0;
       width: 25%;
       text-align: center;
 
@@ -44,7 +44,7 @@
         text-decoration: none;
 
         p {
-          color: $col-white;
+          color: white;
           font-weight: bold;
 
           @include media(">=tablet") {
@@ -64,9 +64,13 @@
     .shops {
       width: 25%;
       border-radius: 32px;
-      padding-top: 9px;
-      padding-bottom: 9px;
+      //background-color: #ffad0d;
+      padding: 9px 0;
       text-align: center;
+
+      @include media(">=desktop") {
+        border-radius: 60px;
+      }
 
       a {
         text-decoration: none;
@@ -88,6 +92,9 @@
 
     .groups {
       width: 25%;
+      border-radius: 32px;
+      //background-color: #198754;
+      padding: 9px 0;
       text-align: center;
 
       a {
@@ -111,6 +118,10 @@
 
     .cards {
       width: 25%;
+      border-radius: 32px;
+      //background-color: #212337;
+      padding-top: 9px;
+      padding-bottom: 9px;
       text-align: center;
 
       a {
@@ -127,6 +138,10 @@
             font-size: 2rem;
           }
         }
+      }
+
+      .cards:active {
+        background-color: #212337;
       }
     }
   }

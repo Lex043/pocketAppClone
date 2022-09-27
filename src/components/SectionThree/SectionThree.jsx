@@ -10,11 +10,13 @@ const SectionThree = () => {
             <p>Payments</p>
           </Link>
         </div>
+
         <div className="shops">
-          <Link to="shops">
+          <Link to="/shops">
             <p>Shops</p>
           </Link>
         </div>
+
         <div className="groups">
           <Link to="/groups">
             <p>Groups</p>
