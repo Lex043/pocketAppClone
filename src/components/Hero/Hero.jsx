@@ -1,5 +1,5 @@
 import { FaApple } from "react-icons/fa";
-import { RiGooglePlayFill } from "react-icons/Ri";
+import { RiGooglePlayFill } from "react-icons/ri";
 import "./Hero.scss";
 import logo from "../../assets/IMG_2768 1.png";
 import phone from "../../assets/__next_static_media_display-images.b8e3acca.png";

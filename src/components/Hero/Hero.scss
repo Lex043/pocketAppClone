@@ -182,7 +182,7 @@
       height: auto;
     }
 
-    @include media(">=sm-desktop") {
+    @include media(">=desktop") {
       right: 6rem;
     }
 
