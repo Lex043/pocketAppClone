@@ -18,7 +18,7 @@
     padding: 5.2rem 2rem;
 
     @include media(">=desktop") {
-      padding: 10rem 19rem;
+      padding: 8rem 9rem;
     }
   }
 
@@ -27,7 +27,7 @@
     margin-bottom: 1rem;
 
     @include media(">=desktop") {
-      font-size: 4rem;
+      font-size: 3rem;
     }
   }
 
@@ -41,13 +41,13 @@
     }
 
     @include media(">=desktop") {
-      font-size: 2rem;
+      font-size: 1.5rem;
     }
   }
   .buttons {
     display: flex;
     justify-content: center;
-    flex-wrap: wrap;
+    //flex-wrap: wrap;
     align-items: center;
     gap: 12px;
     padding-left: 12px;
@@ -55,6 +55,7 @@
 
     @include media(">=desktop") {
       gap: 4rem;
+      //flex-direction: row;
     }
 
     .apple,

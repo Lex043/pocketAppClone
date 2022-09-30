@@ -154,7 +154,7 @@
     padding: 0 16px;
 
     @include media(">=desktop") {
-      padding: 0 2px;
+      padding: 0 4rem;
     }
 
     .groups__header {
@@ -190,7 +190,7 @@
       }
 
       @include media(">=desktop") {
-        gap: 2rem;
+        gap: 5rem;
         margin-bottom: 10rem;
       }
 
@@ -207,7 +207,7 @@
         }
 
         @include media(">=desktop") {
-          font-size: 3rem;
+          font-size: 3.4rem;
         }
       }
 
@@ -221,7 +221,7 @@
         }
 
         @include media(">=desktop") {
-          font-size: 1.2rem;
+          font-size: 1.3rem;
         }
       }
 
