@@ -17,17 +17,17 @@ const SectionOne = () => {
       <figure>
         <section className="firstpart">
           <img src={lush} alt="lush" />
-          <img src={quacktails} alt="" />
-          <img src={burgerking} alt="" />
-          <img src={eveafterdark} alt="" />
-          <img src={chow} alt="" />
-          <img src={guinness} alt="" />
+          <img src={quacktails} alt="quacktails" />
+          <img src={burgerking} alt="burgerking" />
+          <img src={eveafterdark} alt="eveafterdark" />
+          <img src={chow} alt="chow" />
+          <img src={guinness} altguinness />
         </section>
         <section className="secondpart">
-          <img src={garmspot} alt="" />
-          <img src={nkassi} alt="" />
-          <img src={hungrylagosian} alt="" />
-          <img src={nexus} alt="" />
+          <img src={garmspot} alt="garmspot" />
+          <img src={nkassi} alt="nkassi" />
+          <img src={hungrylagosian} alt="hungrylagosian" />
+          <img src={nexus} alt="nexus" />
         </section>
       </figure>
     </section>
