@@ -152,7 +152,7 @@
     padding: 0 16px;
 
     @include media(">=desktop") {
-      padding: 0 4rem;
+      padding: 0 5rem;
     }
 
     .cards__header {
@@ -185,7 +185,7 @@
       }
 
       @include media(">=desktop") {
-        gap: 4rem;
+        gap: 5rem;
         margin-bottom: 10rem;
       }
 

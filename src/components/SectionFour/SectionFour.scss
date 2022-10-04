@@ -5,7 +5,7 @@
   padding: 0 16px;
 
   @include media(">=desktop") {
-    padding: 0 4rem;
+    padding: 0 8rem;
   }
 
   .section-four-text {
@@ -95,6 +95,10 @@
 
     @include media(">=tablet") {
       width: 50%;
+    }
+
+    @include media(">=desktop") {
+      width: 48%;
     }
   }
 }
