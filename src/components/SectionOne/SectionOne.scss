@@ -2,7 +2,7 @@
 @import "../../styles/utils/breakpoints";
 
 .section-one {
-  padding: 30px 70px 12px;
+  padding: 30px 12px;
   font-family: "Roboto", sans-serif;
 
   @include media(">=tablet") {
@@ -34,7 +34,7 @@
     }
 
     img {
-      width: 35px;
+      width: 34px;
       object-fit: contain;
       overflow: hidden;
 
@@ -54,7 +54,7 @@
     align-items: center;
 
     img {
-      width: 50px;
+      width: 48px;
       object-fit: contain;
       overflow: hidden;
 

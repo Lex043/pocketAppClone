@@ -3,10 +3,9 @@
 
 .group__sticky {
   padding: 38px 16px;
-  font-family: "Roboto", sans-serif;
 
   @include media(">=tablet") {
-    padding: 0 43px;
+    padding: 0 40px;
   }
 
   .features {
@@ -21,6 +20,7 @@
     background-color: #e5e5e5;
     position: sticky;
     top: 2rem;
+    font-family: "Roboto", sans-serif;
 
     @include media(">=tablet") {
       top: 3rem;
@@ -187,12 +187,12 @@
         gap: 2rem;
         align-items: center;
         width: 100%;
-        padding: 0 43px;
       }
 
       @include media(">=desktop") {
         gap: 5rem;
         margin-bottom: 10rem;
+        padding: 0 44px;
       }
 
       h1 {
@@ -201,6 +201,7 @@
         color: $btn-col;
         margin-bottom: 14px;
         font-weight: 600;
+        font-family: "Roboto", sans-serif;
 
         @include media(">=tablet") {
           text-align: left;
@@ -222,7 +223,7 @@
         }
 
         @include media(">=desktop") {
-          font-size: 1.1rem;
+          font-size: 1.3rem;
         }
       }
 
