@@ -4,6 +4,7 @@
 .section-five-cont {
   padding: 0 16px;
   margin-bottom: 50px;
+  font-family: "Roboto", sans-serif;
 
   @include media(">=tablet") {
     padding: 0 43px;

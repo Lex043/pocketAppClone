@@ -3,6 +3,7 @@
 
 .section-four {
   padding: 0 16px;
+  font-family: "Roboto", sans-serif;
 
   @include media(">=desktop") {
     padding: 0 8rem;
@@ -43,7 +44,7 @@
     }
 
     @include media(">=desktop") {
-      gap: 4rem;
+      gap: 5rem;
       margin-bottom: 10rem;
     }
   }
@@ -72,7 +73,7 @@
     }
 
     @include media(">=desktop") {
-      font-size: 4rem;
+      font-size: 3.5rem;
     }
   }
 
@@ -86,7 +87,7 @@
     }
 
     @include media(">=desktop") {
-      font-size: 1.4rem;
+      font-size: 1.3rem;
     }
   }
 
@@ -97,8 +98,8 @@
       width: 50%;
     }
 
-    @include media(">=desktop") {
-      width: 48%;
-    }
+    // @include media(">=desktop") {
+    //   width: 48%;
+    // }
   }
 }

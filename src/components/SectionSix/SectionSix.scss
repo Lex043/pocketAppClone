@@ -10,6 +10,7 @@
   border-bottom: 1px solid rgba(33, 35, 55, 0.1);
   padding-bottom: 52px;
   margin-bottom: 20px;
+  font-family: "Roboto", sans-serif;
 
   @include media(">=desktop") {
     gap: 38px;
@@ -28,9 +29,9 @@
     border-radius: 22px;
 
     @include media(">=desktop") {
-      font-size: 2rem;
+      font-size: 1.2rem;
       border-radius: 38px;
-      padding: 20px 28px;
+      padding: 20px 30px;
     }
   }
 }

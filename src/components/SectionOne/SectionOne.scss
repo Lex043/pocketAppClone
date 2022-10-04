@@ -2,10 +2,8 @@
 @import "../../styles/utils/breakpoints";
 
 .section-one {
-  padding-top: 30px;
-  padding-bottom: 70px;
-  padding-left: 12px;
-  padding-right: 12px;
+  padding: 30px 70px 12px;
+  font-family: "Roboto", sans-serif;
 
   @include media(">=tablet") {
     padding: 40px 43px;
